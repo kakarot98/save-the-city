@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeteorMovementScript : MonoBehaviour
+public class MeteorMovementDiagonallyScript : MonoBehaviour
 {
     public float moveSpeed;
     public Rigidbody2D rb;
@@ -15,17 +15,18 @@ public class MeteorMovementScript : MonoBehaviour
 
     private void Update()
     {
-        
+
     }
 
     void FixedUpdate()
-    {        
-        MoveInVerticalAxis();
+    {
+        MoveInDiagonalDirection();
     }
 
-    void MoveInVerticalAxis()
+    void MoveInDiagonalDirection()
     {
-        rb.MovePosition((Vector2)transform.position + (Vector2.down * moveSpeed * Time.deltaTime));
+        Vector2 diagonalDirection = new Vector2(1f, -1f);
+        rb.MovePosition((Vector2)transform.position + (diagonalDirection * moveSpeed * Time.deltaTime));
 
         //Vector2 temp = transform.position;
         //temp.y += moveSpeed * Time.deltaTime;

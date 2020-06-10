@@ -27,7 +27,7 @@ public class MeteorSpawnerScript : MonoBehaviour
            
             GameObject obstacleBox1 = null;
             Vector3 parentPos = transform.position;
-            obstacleBox1 = Instantiate(meteorPrefab, new Vector3(-parentPos.x, parentPos.y, parentPos.z), Quaternion.identity);
+            obstacleBox1 = Instantiate(meteorPrefab, new Vector3(parentPos.x, parentPos.y, parentPos.z), Quaternion.identity);
             
 
             currentMeteorSpawnTimer = 0f;
