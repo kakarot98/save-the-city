@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class MeteorMovementScript : MonoBehaviour
+public class MeteorMovementLeftToRight : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rb;
     public float offCameraPointVerticalAxis;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,17 +16,19 @@ public class MeteorMovementScript : MonoBehaviour
 
     private void Update()
     {
-        
+
     }
-    
+
     void FixedUpdate()
-    {        
+    {
         MoveInVerticalAxis();
     }
 
     void MoveInVerticalAxis()
     {
-        rb.MovePosition((Vector2)transform.position + (Vector2.down * speed * Time.deltaTime));
+        //float x = Random.Range(0.2f, 0.6f);
+        Vector2 direction = new Vector2(Random.Range(0.2f, 0.7f), -1f);
+        rb.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
 
         
         if (transform.position.y < offCameraPointVerticalAxis)
@@ -34,6 +36,4 @@ public class MeteorMovementScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    
 }
