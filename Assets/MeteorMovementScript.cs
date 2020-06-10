@@ -8,7 +8,7 @@ public class MeteorMovementScript : MonoBehaviour
     public float offCameraPointVerticalAxis;
     void Start()
     {
-        
+        moveSpeed = Random.Range(-4f, -1f);
     }
 
     
@@ -20,7 +20,7 @@ public class MeteorMovementScript : MonoBehaviour
 
     void MoveInVerticalAxis()
     {
-        moveSpeed = Random.Range(-4f, -1f);
+        
         Vector2 temp = transform.position;
         temp.y += moveSpeed * Time.deltaTime;
         transform.position = temp;
