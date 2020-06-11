@@ -19,6 +19,8 @@ public class MeteorMovementLeftToRight : MonoBehaviour
 
     }
 
+    
+
     void FixedUpdate()
     {
         MoveInVerticalAxis();
@@ -36,4 +38,6 @@ public class MeteorMovementLeftToRight : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
 }
