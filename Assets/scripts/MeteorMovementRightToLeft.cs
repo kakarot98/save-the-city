@@ -12,6 +12,7 @@ public class MeteorMovementRightToLeft : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         speed = Random.Range(1f, 4f);
+        //speed = 1f;
     }
 
     private void Update()

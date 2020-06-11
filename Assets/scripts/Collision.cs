@@ -5,12 +5,15 @@ using UnityEngine;
 public class Collision : MonoBehaviour
 {
     //public GameObject meteor, meteorD;
+    
 
-    void OnCollisionEnter2D(Collision2D collision)
+  
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject )
+        if (collision.collider.tag == "meteor" )
         {
             Debug.Log("HIt");
+            
         }
     }
 } 

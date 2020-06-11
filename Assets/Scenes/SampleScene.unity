@@ -377,7 +377,7 @@ GameObject:
   m_Layer: 8
   m_Name: Border
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1462833931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c30ce6d421bda4581b6a3b6df56cdd, type: 3}
+  m_Script: {fileID: 11500000, guid: efe002ea614238b459fe620d55e6f772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1462833933
@@ -427,8 +427,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462833931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.78, z: -1.8105305}
-  m_LocalScale: {x: 6, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -3.45, z: -1.8105305}
+  m_LocalScale: {x: 6, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
