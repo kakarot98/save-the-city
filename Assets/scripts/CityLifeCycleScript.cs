@@ -20,7 +20,7 @@ public class CityLifeCycleScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "meteor") 
         {
-            Debug.Log("Hit the city");
+            //Debug.Log("Hit the city");
             TakeDamage(1);
         }
     }

@@ -12,7 +12,7 @@ public class Collision : MonoBehaviour
     {
         if (collision.collider.tag == "meteor" )
         {
-            Debug.Log("HIt");
+            //Debug.Log("HIt");
             
         }
     }
