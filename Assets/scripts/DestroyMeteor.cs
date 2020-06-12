@@ -10,7 +10,7 @@ public class DestroyMeteor : MonoBehaviour
     private void OnMouseDown()
     {
         //Vector3 meteorPos = meteor.transform.position;
-        if(gameObject.transform.position.y < Screen.height - border)
+        if (gameObject.transform.position.y < Screen.height - border)
         {
             Destroy(gameObject);
         }
