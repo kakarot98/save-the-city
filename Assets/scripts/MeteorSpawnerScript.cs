@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeteorSpawnerScript : MonoBehaviour
 {
-    public GameObject meteorPrefab;
+    public GameObject[] meteorAndStarPrefab;
     public float meteorSpawnTimer = 2f;
     private float currentMeteorSpawnTimer;
     void Start()
@@ -21,13 +21,24 @@ public class MeteorSpawnerScript : MonoBehaviour
     public void SpawnMeteor()
     {
         currentMeteorSpawnTimer += Time.deltaTime;
+        
+        
 
         if (currentMeteorSpawnTimer >= meteorSpawnTimer)
         {
            
             GameObject obstacleBox1 = null;
+            float meteorOrStar = Random.Range(0, 5);
             Vector3 parentPos = transform.position;
-            obstacleBox1 = Instantiate(meteorPrefab, new Vector3(parentPos.x, parentPos.y, parentPos.z), Quaternion.identity);
+            if (meteorOrStar <= 3)
+            {
+                obstacleBox1 = Instantiate(meteorAndStarPrefab[0], new Vector3(parentPos.x, parentPos.y, parentPos.z), Quaternion.identity);
+            }
+            else if (meteorOrStar > 3) 
+            {
+                obstacleBox1 = Instantiate(meteorAndStarPrefab[1], new Vector3(parentPos.x, parentPos.y, parentPos.z), Quaternion.identity);
+            }
+            
             
 
             currentMeteorSpawnTimer = 0f;

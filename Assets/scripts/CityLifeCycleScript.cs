@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CityLifeCycleScript : MonoBehaviour
 {
-    public int maxHealth = 10;
-    public int currentHealth;
+    public float maxHealth = 10;
+    public float currentHealth;
 
     public HealthBarScript healthBar;
 
@@ -18,17 +18,28 @@ public class CityLifeCycleScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "meteor") 
+        if (collision.gameObject.tag == "meteor")
         {
             //Debug.Log("Hit the city");
-            TakeDamage(1);
+            TakeDamage(1f);
+        }
+        else if (collision.gameObject.tag == "star") 
+        {
+            Debug.Log("Star hit");
+            TakeDamage(0.3f);
         }
     }
 
-    void TakeDamage(int damage) 
+    void TakeDamage(float damage) 
     {
         currentHealth -= damage;
 
+        healthBar.SetHealth(currentHealth);
+    }
+
+    void IncreaseHealth(float heal) 
+    {
+        currentHealth += heal;
         healthBar.SetHealth(currentHealth);
     }
 }
