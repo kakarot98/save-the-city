@@ -180,4 +180,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   rb: {fileID: 0}
-  offCameraPointVerticalAxis: 0
+  offCameraPointVerticalAxis: -4.9
