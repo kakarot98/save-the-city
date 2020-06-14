@@ -8,3 +8,5 @@ need to add more animations, score system, death panel and a main menu screen.
 
 Gameplay 1 :
 
+![](https://github.com/kakarot98/save-the-city/blob/master/GamePlay1.gif)
+
