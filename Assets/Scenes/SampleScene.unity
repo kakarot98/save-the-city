@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorAndStarPrefab:
-  - {fileID: 3113899973218684808, guid: 754bdfa1f4ed728488897e2032f20991, type: 3}
+  - {fileID: 9172200778019246856, guid: 754bdfa1f4ed728488897e2032f20991, type: 3}
   - {fileID: 2026630664831860720, guid: c7bf985d035dbd14d896770266d54b36, type: 3}
-  meteorSpawnTimer: 4
+  meteorSpawnTimer: 3
 --- !u!4 &77754407
 Transform:
   m_ObjectHideFlags: 0
@@ -198,9 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorAndStarPrefab:
-  - {fileID: 1456366326506967197, guid: 91ab7e14207697845aa25523d2553c60, type: 3}
+  - {fileID: 3732936825512937064, guid: 91ab7e14207697845aa25523d2553c60, type: 3}
   - {fileID: 836577077436152372, guid: fba9d56e6013fed4ba7d16c2abef3e1a, type: 3}
-  meteorSpawnTimer: 4.7
+  meteorSpawnTimer: 4
 --- !u!4 &107599412
 Transform:
   m_ObjectHideFlags: 0
@@ -642,9 +642,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorAndStarPrefab:
-  - {fileID: 8812492128893771174, guid: 62ee0ad10820e824ca7b1c989dcd082b, type: 3}
+  - {fileID: 6664715261297275459, guid: 62ee0ad10820e824ca7b1c989dcd082b, type: 3}
   - {fileID: 4945104499458646498, guid: 1bf356e5baf963d4c8a5800d73057b06, type: 3}
-  meteorSpawnTimer: 3.4
+  meteorSpawnTimer: 2.8
 --- !u!4 &1327649730
 Transform:
   m_ObjectHideFlags: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorAndStarPrefab:
-  - {fileID: 8812492128893771174, guid: 62ee0ad10820e824ca7b1c989dcd082b, type: 3}
+  - {fileID: 6664715261297275459, guid: 62ee0ad10820e824ca7b1c989dcd082b, type: 3}
   - {fileID: 4945104499458646498, guid: 1bf356e5baf963d4c8a5800d73057b06, type: 3}
   meteorSpawnTimer: 2.1
 --- !u!4 &2032357959
